@@ -1,3 +1,3 @@
-# Astronomy-Ale-Works
+# Astronomy-Aleworks
 
-Astronomy Ale Works is a family owned brewery.
+Astronomy Aleworks is a family owned brewery.
