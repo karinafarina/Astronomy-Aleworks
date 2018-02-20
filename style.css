@@ -8,21 +8,19 @@ body {
   font-family: 'Encode Sans', sans-serif, Arial, Helvetica, sans-serif; }
 
 .body-wrapper {
-  background: transparent url("images/beerMaker.png") no-repeat left top;
-  background-size: cover;
   padding: 0;
-  background-color: #eee;
+  background-color: white;
   position: relative; }
-  @media (max-width: 992px) {
+  @media (max-width: 1224px) {
     .body-wrapper {
-      background-image: none; } }
+      background-image: none;
+      background-color: white; } }
 
 header {
   color: #505279;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #eeeeee;
-  opacity: 1;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto',serif !important;
   font-weight: bold; }
   header .logo-wrapper {
     height: 100%;
@@ -38,10 +36,16 @@ header {
           margin-left: auto;
           margin-right: auto; } }
   header .welcome {
-    margin-top: 42px;
     font-size: 46px;
     text-align: center;
-    padding-right: 44px; }
+    padding: 40px; }
+    @media only screen and (max-width: 1224px) {
+      header .welcome {
+        font-size: 30px;
+        -webkit-text-stroke-width: 0;
+        -webkit-text-stroke-color: none;
+        margin-top: 0;
+        padding: 45px; } }
 
 main {
   font-weight: bold;
@@ -63,11 +67,11 @@ main {
     float: left;
     border-radius: 5px;
     width: 25%;
-    margin-right: 20px; }
+    padding-right: 20px; }
   main .beers-wrapper {
     margin-top: 63px; }
     main .beers-wrapper .beer-title {
-      font-family: 'Roboto', serif;
+      font-family: 'Roboto', serif, Arial, Helvetica, sans-serif;
       font-weight: bold;
       font-size: 40px;
       text-align: center;
@@ -91,26 +95,28 @@ main {
       font-size: 40px;
       margin-left: auto;
       margin-right: auto; }
-  main .boss-image-wrapper {
-    float: right;
-    margin-top: 46px;
-    border-radius: 5px; }
-    main .boss-image-wrapper .boss-man {
-      width: 100%; }
-    main .boss-image-wrapper .boss-caption {
-      color: #F0F0F0;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      background-color: black;
-      padding: 16px;
-      font-size: 20px; }
-  main .info {
-    color: #292d31;
-    margin-top: 172px;
-    -webkit-text-stroke-width: .1px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px; }
+  main .info-row {
+    margin-top: 100px; }
+    main .info-row .boss-image-wrapper {
+      border-radius: 5px; }
+      main .info-row .boss-image-wrapper .boss-man {
+        width: 100%; }
+      main .info-row .boss-image-wrapper .boss-caption {
+        color: #F0F0F0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        background-color: black;
+        padding: 16px;
+        font-size: 20px; }
+    main .info-row .beer-maker {
+      width: 100%;
+      border-radius: 5px;
+      padding-top: 77px; }
+    main .info-row .info {
+      color: #292d31;
+      margin-top: 130px;
+      font-weight: bold;
+      text-align: center; }
   main .address {
     font-size: 30px;
     color: #eee;
